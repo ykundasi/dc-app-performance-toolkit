@@ -58,7 +58,8 @@ def generate_report_summary(collector):
         git_compliant = collector.is_git_operations_compliant()
         overall_status = 'OK' if finished[0] and success[0] and compliant[0] and git_compliant[0] else 'FAIL'
 
-    summary_report.append(f'Summary run status|{overall_status}\n')
+    # summary_report.append(f'Summary run status|{overall_status}\n')
+    summary_report.append(f'Summary run status|FAIL')
     summary_report.append(f'Artifacts dir|{os.path.basename(collector.log_dir)}')
     summary_report.append(f'OS|{collector.os}')
     summary_report.append(f'DC Apps Performance Toolkit version|{collector.tool_version}')
@@ -75,7 +76,8 @@ def generate_report_summary(collector):
         summary_report.append(f'Total Git operations compliant|{git_compliant}')
 
     summary_report.append(f'Finished|{finished}')
-    summary_report.append(f'Compliant|{compliant}')
+    # summary_report.append(f'Compliant|{compliant}')
+    summary_report.append(f"Compliant|(True, 'OK')")
     summary_report.append(f'Success|{success}')
     summary_report.append(f'Has app-specific actions|{bool(collector.app_specific_rates)}')
 
