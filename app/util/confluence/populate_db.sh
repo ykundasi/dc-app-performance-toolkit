@@ -39,8 +39,8 @@ echo "Confluence Version: ${CONFLUENCE_VERSION}"
 # Datasets AWS bucket and db dump name
 DATASETS_AWS_BUCKET="https://centaurus-datasets.s3.amazonaws.com/confluence"
 DATASETS_SIZE="large"
-DB_DUMP_NAME="db.dump"
-DB_DUMP_URL="${DATASETS_AWS_BUCKET}/${CONFLUENCE_VERSION}/${DATASETS_SIZE}/${DB_DUMP_NAME}"
+DB_DUMP_NAME="db_no_macro.dump"
+DB_DUMP_URL="https://centaurus-datasets.s3.us-east-2.amazonaws.com/confluence/7.4.8/large/db_no_macro.dump"
 
 ###################    End of variables section  ###################
 
