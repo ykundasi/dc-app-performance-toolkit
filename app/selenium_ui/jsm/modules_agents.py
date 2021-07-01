@@ -149,7 +149,7 @@ def view_report_created_vs_resolved_small(webdriver, datasets):
     PopupManager(webdriver).dismiss_default_popup()
 
 
-@retry(tries=2, delay=0.5, backoff=1, retry_exception=StaleElementReferenceException)
+@retry(tries=3, delay=0.5, backoff=1)
 def view_queues_form_diff_projects_size(browse_queue_page, project_size):
     @print_timing(f'selenium_agent_view_queues_{project_size}_project')
     def measure():
