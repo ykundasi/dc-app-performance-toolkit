@@ -1,10 +1,11 @@
 import random
 
-from selenium_ui.conftest import print_timing
+from selenium_ui.conftest import print_timing, retry
 from selenium_ui.jsm.pages.agent_pages import Login, PopupManager, Logout, BrowseProjects, BrowseCustomers, \
     ViewCustomerRequest, ViewQueue, Report
 from util.api.jira_clients import JiraRestClient
 from util.conf import JSM_SETTINGS
+from selenium.common.exceptions import StaleElementReferenceException
 
 client = JiraRestClient(JSM_SETTINGS.server_url, JSM_SETTINGS.admin_login, JSM_SETTINGS.admin_password)
 rte_status = client.check_rte_status()
@@ -148,6 +149,7 @@ def view_report_created_vs_resolved_small(webdriver, datasets):
     PopupManager(webdriver).dismiss_default_popup()
 
 
+@retry(tries=2, delay=0.5, backoff=1, retry_exception=StaleElementReferenceException)
 def view_queues_form_diff_projects_size(browse_queue_page, project_size):
     @print_timing(f'selenium_agent_view_queues_{project_size}_project')
     def measure():

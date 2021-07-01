@@ -133,7 +133,13 @@ class CustomerRequest(BasePage):
         self.action_chains().move_to_element(
             self.get_element(RequestSelectors.share_request_search_field)).click().perform()
 
-        self.wait_until_invisible(RequestSelectors.share_request_dropdown)
+        self.action_chains().move_to_element(
+            self.get_element(RequestSelectors.share_request_search_field)).double_click().perform()
+
+        #self.wait_until_invisible(RequestSelectors.share_request_dropdown)
+
+        self.action_chains().move_to_element(
+            self.get_element(RequestSelectors.share_request_search_field)).double_click().perform()
 
         self.action_chains().move_to_element(self.get_element(RequestSelectors.share_request_search_field)).send_keys(
             random_customer_name).perform()
