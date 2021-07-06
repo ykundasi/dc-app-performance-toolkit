@@ -242,7 +242,7 @@ props.put(&quot;project_pages&quot;, String.valueOf(pages));</stringProp>
           </collectionProp>
         </Arguments>
         <hashTree/>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="jmeter_login_and_view_dashboard" enabled="true">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="jmeter_login_and_view_dashboard" enabled="false">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
           <boolProp name="TransactionController.parent">true</boolProp>
         </TransactionController>
@@ -9137,14 +9137,14 @@ if ( sleep_time &gt; 0 ) {
                     <collectionProp name="Arguments.arguments">
                       <elementProp name="os_username" elementType="HTTPArgument">
                         <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                        <stringProp name="Argument.value">${adminusername}</stringProp>
+                        <stringProp name="Argument.value">admin</stringProp>
                         <stringProp name="Argument.metadata">=</stringProp>
                         <boolProp name="HTTPArgument.use_equals">true</boolProp>
                         <stringProp name="Argument.name">os_username</stringProp>
                       </elementProp>
                       <elementProp name="os_password" elementType="HTTPArgument">
                         <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                        <stringProp name="Argument.value">${adminpassword}</stringProp>
+                        <stringProp name="Argument.value">admin</stringProp>
                         <stringProp name="Argument.metadata">=</stringProp>
                         <boolProp name="HTTPArgument.use_equals">true</boolProp>
                         <stringProp name="Argument.name">os_password</stringProp>
@@ -9179,9 +9179,9 @@ if ( sleep_time &gt; 0 ) {
                       </elementProp>
                     </collectionProp>
                   </elementProp>
-                  <stringProp name="HTTPSampler.domain">${host}</stringProp>
-                  <stringProp name="HTTPSampler.port">${port}</stringProp>
-                  <stringProp name="HTTPSampler.protocol"></stringProp>
+                  <stringProp name="HTTPSampler.domain">jira-loadb-lotpf11mwz8g-826749595.us-east-2.elb.amazonaws.com</stringProp>
+                  <stringProp name="HTTPSampler.port">80</stringProp>
+                  <stringProp name="HTTPSampler.protocol">http</stringProp>
                   <stringProp name="HTTPSampler.contentEncoding"></stringProp>
                   <stringProp name="HTTPSampler.path">/</stringProp>
                   <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -9210,9 +9210,9 @@ if ( sleep_time &gt; 0 ) {
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
                   <collectionProp name="Arguments.arguments"/>
                 </elementProp>
-                <stringProp name="HTTPSampler.domain">${host}</stringProp>
-                <stringProp name="HTTPSampler.port">${port}</stringProp>
-                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.domain">jira-loadb-lotpf11mwz8g-826749595.us-east-2.elb.amazonaws.com</stringProp>
+                <stringProp name="HTTPSampler.port">80</stringProp>
+                <stringProp name="HTTPSampler.protocol">http</stringProp>
                 <stringProp name="HTTPSampler.contentEncoding"></stringProp>
                 <stringProp name="HTTPSampler.path">/plugins/servlet/upm/marketplace?source=side_nav_find_new_addons</stringProp>
                 <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -9251,7 +9251,7 @@ if ( sleep_time &gt; 0 ) {
                   <collectionProp name="Arguments.arguments">
                     <elementProp name="webSudoPassword" elementType="HTTPArgument">
                       <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                      <stringProp name="Argument.value">${adminpassword}</stringProp>
+                      <stringProp name="Argument.value">admin</stringProp>
                       <stringProp name="Argument.metadata">=</stringProp>
                       <boolProp name="HTTPArgument.use_equals">true</boolProp>
                       <stringProp name="Argument.name">webSudoPassword</stringProp>
@@ -9279,9 +9279,9 @@ if ( sleep_time &gt; 0 ) {
                     </elementProp>
                   </collectionProp>
                 </elementProp>
-                <stringProp name="HTTPSampler.domain">${host}</stringProp>
-                <stringProp name="HTTPSampler.port">${port}</stringProp>
-                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.domain">jira-loadb-lotpf11mwz8g-826749595.us-east-2.elb.amazonaws.com</stringProp>
+                <stringProp name="HTTPSampler.port">80</stringProp>
+                <stringProp name="HTTPSampler.protocol">http</stringProp>
                 <stringProp name="HTTPSampler.contentEncoding"></stringProp>
                 <stringProp name="HTTPSampler.path">/secure/admin/WebSudoAuthenticate.jspa</stringProp>
                 <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -9309,9 +9309,9 @@ if ( sleep_time &gt; 0 ) {
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
                   <collectionProp name="Arguments.arguments"/>
                 </elementProp>
-                <stringProp name="HTTPSampler.domain">${host}</stringProp>
-                <stringProp name="HTTPSampler.port">${port}</stringProp>
-                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.domain">jira-loadb-lotpf11mwz8g-826749595.us-east-2.elb.amazonaws.com</stringProp>
+                <stringProp name="HTTPSampler.port">80</stringProp>
+                <stringProp name="HTTPSampler.protocol">http</stringProp>
                 <stringProp name="HTTPSampler.contentEncoding"></stringProp>
                 <stringProp name="HTTPSampler.path">/secure/DeleteBulkUserWebworkAction.jspa</stringProp>
                 <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -9337,9 +9337,9 @@ if ( sleep_time &gt; 0 ) {
                     </elementProp>
                   </collectionProp>
                 </elementProp>
-                <stringProp name="HTTPSampler.domain">${host}</stringProp>
-                <stringProp name="HTTPSampler.port">${port}</stringProp>
-                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.domain">jira-loadb-lotpf11mwz8g-826749595.us-east-2.elb.amazonaws.com</stringProp>
+                <stringProp name="HTTPSampler.port">80</stringProp>
+                <stringProp name="HTTPSampler.protocol">http</stringProp>
                 <stringProp name="HTTPSampler.contentEncoding"></stringProp>
                 <stringProp name="HTTPSampler.path">/rest/budJira/1.0/jiraUser/searchUDetails</stringProp>
                 <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -9383,9 +9383,9 @@ if ( sleep_time &gt; 0 ) {
                     </elementProp>
                   </collectionProp>
                 </elementProp>
-                <stringProp name="HTTPSampler.domain">${host}</stringProp>
-                <stringProp name="HTTPSampler.port">${port}</stringProp>
-                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.domain">jira-loadb-lotpf11mwz8g-826749595.us-east-2.elb.amazonaws.com</stringProp>
+                <stringProp name="HTTPSampler.port">80</stringProp>
+                <stringProp name="HTTPSampler.protocol">http</stringProp>
                 <stringProp name="HTTPSampler.contentEncoding"></stringProp>
                 <stringProp name="HTTPSampler.path">/rest/budJira/1.0/jiraUser/searchUDetails</stringProp>
                 <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -9475,9 +9475,9 @@ if ( sleep_time &gt; 0 ) {
                     </elementProp>
                   </collectionProp>
                 </elementProp>
-                <stringProp name="HTTPSampler.domain">${host}</stringProp>
-                <stringProp name="HTTPSampler.port">${port}</stringProp>
-                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.domain">jira-loadb-lotpf11mwz8g-826749595.us-east-2.elb.amazonaws.com</stringProp>
+                <stringProp name="HTTPSampler.port">80</stringProp>
+                <stringProp name="HTTPSampler.protocol">http</stringProp>
                 <stringProp name="HTTPSampler.contentEncoding"></stringProp>
                 <stringProp name="HTTPSampler.path">/rest/budJira/1.0/jiraUser/delete</stringProp>
                 <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -9649,9 +9649,9 @@ if ( sleep_time &gt; 0 ) {
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
                   <collectionProp name="Arguments.arguments"/>
                 </elementProp>
-                <stringProp name="HTTPSampler.domain">${host}</stringProp>
-                <stringProp name="HTTPSampler.port">${port}</stringProp>
-                <stringProp name="HTTPSampler.protocol"></stringProp>
+                <stringProp name="HTTPSampler.domain">jira-loadb-lotpf11mwz8g-826749595.us-east-2.elb.amazonaws.com</stringProp>
+                <stringProp name="HTTPSampler.port">80</stringProp>
+                <stringProp name="HTTPSampler.protocol">http</stringProp>
                 <stringProp name="HTTPSampler.contentEncoding"></stringProp>
                 <stringProp name="HTTPSampler.path">/secure/UploadUsersDetailsWebworkAction!save.jspa</stringProp>
                 <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -9696,8 +9696,8 @@ if ( sleep_time &gt; 0 ) {
                       </elementProp>
                     </collectionProp>
                   </elementProp>
-                  <stringProp name="HTTPSampler.domain">localhost</stringProp>
-                  <stringProp name="HTTPSampler.port">8080</stringProp>
+                  <stringProp name="HTTPSampler.domain">jira-loadb-lotpf11mwz8g-826749595.us-east-2.elb.amazonaws.com</stringProp>
+                  <stringProp name="HTTPSampler.port">80</stringProp>
                   <stringProp name="HTTPSampler.protocol">http</stringProp>
                   <stringProp name="HTTPSampler.contentEncoding"></stringProp>
                   <stringProp name="HTTPSampler.path">/rest/api/2/user</stringProp>
@@ -9765,6 +9765,43 @@ if ( sleep_time &gt; 0 ) {
               </JSR223Timer>
               <hashTree/>
             </hashTree>
+            <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+              <boolProp name="ResultCollector.error_logging">false</boolProp>
+              <objProp>
+                <name>saveConfig</name>
+                <value class="SampleSaveConfiguration">
+                  <time>true</time>
+                  <latency>true</latency>
+                  <timestamp>true</timestamp>
+                  <success>true</success>
+                  <label>true</label>
+                  <code>true</code>
+                  <message>true</message>
+                  <threadName>true</threadName>
+                  <dataType>true</dataType>
+                  <encoding>false</encoding>
+                  <assertions>true</assertions>
+                  <subresults>true</subresults>
+                  <responseData>false</responseData>
+                  <samplerData>false</samplerData>
+                  <xml>false</xml>
+                  <fieldNames>true</fieldNames>
+                  <responseHeaders>false</responseHeaders>
+                  <requestHeaders>false</requestHeaders>
+                  <responseDataOnError>false</responseDataOnError>
+                  <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+                  <assertionsResultsToSave>0</assertionsResultsToSave>
+                  <bytes>true</bytes>
+                  <sentBytes>true</sentBytes>
+                  <url>true</url>
+                  <threadCounts>true</threadCounts>
+                  <idleTime>true</idleTime>
+                  <connectTime>true</connectTime>
+                </value>
+              </objProp>
+              <stringProp name="filename"></stringProp>
+            </ResultCollector>
+            <hashTree/>
           </hashTree>
           <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="debug sampler" enabled="false">
             <boolProp name="displayJMeterProperties">false</boolProp>
