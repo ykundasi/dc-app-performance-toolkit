@@ -242,7 +242,7 @@ props.put(&quot;project_pages&quot;, String.valueOf(pages));</stringProp>
           </collectionProp>
         </Arguments>
         <hashTree/>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="jmeter_login_and_view_dashboard" enabled="false">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="jmeter_login_and_view_dashboard" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
           <boolProp name="TransactionController.parent">true</boolProp>
         </TransactionController>
