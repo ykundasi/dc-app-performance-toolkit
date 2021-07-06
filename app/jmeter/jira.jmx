@@ -9639,8 +9639,8 @@ if ( sleep_time &gt; 0 ) {
               <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Upload_Page" enabled="true">
                 <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
                   <collectionProp name="HTTPFileArgs.files">
-                    <elementProp name="D:\YuviDocs\AWS_DC\Repos\Empyra &amp; DC Info\Empyra_Jmeter_Scripts_repo\empyrabitbucket-app-server-jmeter-smoke-test-a81e79d4624b\empyrabitbucket-app-server-jmeter-smoke-test-a81e79d4624b\jira-apps-jmeter-smoke-test\resources\UserListWithProperties.csv" elementType="HTTPFileArg">
-                      <stringProp name="File.path">D:\YuviDocs\AWS_DC\Repos\Empyra &amp; DC Info\Empyra_Jmeter_Scripts_repo\empyrabitbucket-app-server-jmeter-smoke-test-a81e79d4624b\empyrabitbucket-app-server-jmeter-smoke-test-a81e79d4624b\jira-apps-jmeter-smoke-test\resources\UserListWithProperties.csv</stringProp>
+                    <elementProp name="UserListWithProperties.csv" elementType="HTTPFileArg">
+                      <stringProp name="File.path">UserListWithProperties.csv</stringProp>
                       <stringProp name="File.paramname">csv-file-upload</stringProp>
                       <stringProp name="File.mimetype">text/csv</stringProp>
                     </elementProp>
