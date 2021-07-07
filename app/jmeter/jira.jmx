@@ -242,7 +242,7 @@ props.put(&quot;project_pages&quot;, String.valueOf(pages));</stringProp>
           </collectionProp>
         </Arguments>
         <hashTree/>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="jmeter_login_and_view_dashboard" enabled="false">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="jmeter_login_and_view_dashboard" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
           <boolProp name="TransactionController.parent">true</boolProp>
         </TransactionController>
@@ -9732,7 +9732,7 @@ if ( sleep_time &gt; 0 ) {
                   <hashTree/>
                 </hashTree>
               </hashTree>
-              <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+              <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="false">
                 <boolProp name="ResultCollector.error_logging">false</boolProp>
                 <objProp>
                   <name>saveConfig</name>
